@@ -4,7 +4,6 @@ import { Search, Filter, Globe, BarChart2, Layers, MessageSquare, Shield, Menu, 
 
 // NewsAPI.org API key - you'll need to replace this with your own
 // Sign up at https://newsapi.org/register to get a free API key
-const NEWS_API_KEY = '9a085c68010446329dc5142fb4edc5b0';
 const NEWS_API_URL = 'https://newsapi.org/v2';
 
 // Helper function to determine source type
@@ -614,9 +613,9 @@ const StratLens = () => {
                             query : `${query} defense military`;
       
       // Fetch articles from NewsAPI
-      const response = await fetch(
-        `${NEWS_API_URL}/everything?q=${encodeURIComponent(searchContext)}&sortBy=relevancy&language=en&apiKey=${NEWS_API_KEY}`
-      );
+      const response = await fetch(`/api/news?q=${encodeURIComponent(searchQuery)}`);
+
+
       
       if (!response.ok) {
         throw new Error(`News API returned ${response.status}: ${response.statusText}`);
