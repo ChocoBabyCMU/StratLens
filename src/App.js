@@ -866,11 +866,11 @@ const StratLens = () => {
             <div className="flex items-center mb-4 md:mb-0">
               <Shield className="w-5 h-5 mr-2 text-blue-700" />
               <span className="text-sm text-gray-600 font-semibold">
-                StratLens | Singapore Ministry of Defence
+                StratLens 
               </span>
             </div>
             <div className="text-sm text-gray-500">
-              For official use only • Developed for MINDEF DXOs • 2025
+              For official use only 2025
             </div>
           </div>
         </div>
